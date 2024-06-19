@@ -1,0 +1,52 @@
+.bold {
+  @apply font-bold;
+}
+.regular {
+  @apply font-normal;
+}
+.medium {
+  @apply font-medium;
+}
+
+.h1-text {
+  @include text(45px, 55px);
+  @extend .bold;
+}
+
+.h2-text {
+  @include text(40px, 55px);
+  @extend .bold;
+}
+
+.h3-text {
+  @include text(30px, 36px);
+  @extend .bold;
+}
+
+.benefit-text {
+  @include text(27px, 110%);
+  @extend .bold;
+}
+
+.body-text {
+  @include text(16px, 110%);
+  @extend .medium;
+
+  &_lg {
+    font-size: 18px;
+  }
+
+  &_sm {
+    font-size: 15px;
+  }
+}
+
+.title-text {
+  @include text(20px, 110%);
+  @extend .bold;
+}
+
+.button-text {
+  @include text(14px, 110%);
+  @extend .medium;
+}
