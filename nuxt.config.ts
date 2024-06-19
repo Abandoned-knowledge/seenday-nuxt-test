@@ -27,6 +27,8 @@ export default defineNuxtConfig({
     assets: "./app/assets/",
   },
 
+  css: ["@/app/scss/main.scss"],
+
   app: {
     head: {
       title: "Seenday",
