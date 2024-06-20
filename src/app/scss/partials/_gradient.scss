@@ -1,0 +1,8 @@
+.main-gradient {
+  @apply bg-gradient-to-br from-[#C071FF] to-main;
+}
+
+.main-gradient-hover {
+  @extend .main-gradient;
+  @apply hover:from-accent hover:to-main;
+}
