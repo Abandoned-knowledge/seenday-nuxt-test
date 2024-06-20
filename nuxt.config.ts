@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
   ssr: true,
 
+  alias: {
+    image: "./app/img",
+  },
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@vee-validate/nuxt",
@@ -18,7 +22,7 @@ export default defineNuxtConfig({
   srcDir: "./src",
 
   components: {
-    dirs: ["./components/"],
+    dirs: ["./components/", "./shared/icons", "./shared/buttons"],
   },
 
   dir: {
@@ -43,6 +47,10 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap",
           crossorigin: "",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css",
         },
       ],
     },
