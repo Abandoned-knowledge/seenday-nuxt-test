@@ -9,7 +9,7 @@ const unlockBody = () => document.body.removeAttribute("class");
 <template>
   <div
     @click="[(isActive = !isActive), lockBody()]"
-    class="h-[24px] w-[40px] flex flex-col justify-between cursor-pointer"
+    class="h-[24px] w-[40px] flex flex-col justify-between cursor-pointer md:hidden"
   >
     <div v-for="_ in 3" class="bg-main w-full h-1 rounded-full"></div>
   </div>

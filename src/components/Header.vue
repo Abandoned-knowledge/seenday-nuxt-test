@@ -4,9 +4,9 @@ const links = ["Для фотографов", "В школах", "В детск�
 
 <template>
   <header class="bg-white">
-    <div class="flex items-center justify-between container h-fit py-4">
+    <div class="container flex items-center justify-between h-fit py-4">
       <div class="flex items-center h-max gap-4">
-        <HamburgerMenu :links="links" />
+        <HamburgerMenu :links="links"/>
         <LogoIcon class="w-auto h-8" />
       </div>
 
