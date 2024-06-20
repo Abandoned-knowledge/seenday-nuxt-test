@@ -25,11 +25,6 @@
   @extend .bold;
 }
 
-.benefit-text {
-  @include text(27px, 110%);
-  @extend .bold;
-}
-
 .body-text {
   @include text(16px, 110%);
   @extend .medium;
