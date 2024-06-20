@@ -1,15 +1,12 @@
 export default defineNuxtConfig({
   ssr: true,
 
-  alias: {
-    image: "./app/img",
-  },
-
   modules: [
     "@nuxtjs/tailwindcss",
     "@vee-validate/nuxt",
     "radix-vue/nuxt",
     "@nuxtjs/i18n",
+    "@nuxt/image",
   ],
 
   i18n: {
@@ -22,7 +19,11 @@ export default defineNuxtConfig({
   srcDir: "./src",
 
   components: {
-    dirs: ["./components/", "./shared/icons", "./shared/buttons"],
+    dirs: [
+      "./components/",
+      "./shared/icons",
+      "./shared/buttons",
+    ],
   },
 
   dir: {
