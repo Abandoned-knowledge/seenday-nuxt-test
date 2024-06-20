@@ -13,9 +13,8 @@ const unlockBody = () => document.body.removeAttribute("class");
   >
     <div v-for="_ in 3" class="bg-main w-full h-1 rounded-full"></div>
   </div>
-
   <div class="popup" :class="{ active: isActive }">
-    <div class="container flex flex-col gap-10">
+    <div class="container flex flex-col gap-10 px-5">
       <header class="flex items-center justify-between">
         <LogoIcon class="w-auto h-10" />
 
@@ -34,7 +33,7 @@ const unlockBody = () => document.body.removeAttribute("class");
         </NavigationMenuList>
       </NavigationMenuRoot>
 
-      <footer class="flex justify-between gap-3">
+      <footer class="flex justify-between gap-3 flex-wrap">
         <ButtonSmallGradient
           v-for="name in [
             'Войти',
@@ -52,7 +51,7 @@ const unlockBody = () => document.body.removeAttribute("class");
 
 <style lang="scss" scoped>
 .popup {
-  @apply z-10 py-4 bg-black absolute bottom-0 h-full left-0 w-full sm:w-[80%] -translate-x-full transition-all duration-[400ms] ease-in-out;
+  @apply py-4 bg-black absolute bottom-0 h-full left-0 w-full sm:w-[80%] -translate-x-full transition-all duration-[400ms] ease-in-out;
 
   &.active {
     @apply translate-x-0;

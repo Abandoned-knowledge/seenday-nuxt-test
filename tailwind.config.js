@@ -16,11 +16,12 @@ export default {
       grey: "var(--grey-color)",
     },
     fontFamily: {
-      'sans': 'Montserrat, sans-serif',
+      sans: "Montserrat, sans-serif",
     },
     container: {
       center: true,
-    }
+    },
   },
+  corePlugins: {},
   plugins: [],
 };
