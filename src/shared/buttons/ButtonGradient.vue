@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <button class="body-text p-3 text-black rounded bg-lightGrey">
+  <button class="body-text p-3 px-20 text-white rounded main-gradient-hover">
     <slot></slot>
   </button>
 </template>
