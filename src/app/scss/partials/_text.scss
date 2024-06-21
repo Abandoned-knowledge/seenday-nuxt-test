@@ -11,22 +11,22 @@
 }
 
 .h1-text {
-  @include text(45px, 55px);
+  @include text(var(--h1-text), 130%);
   @extend .bold;
 }
 
 .h2-text {
-  @include text(40px, 55px);
+  @include text(var(--h2-text), 55px);
   @extend .bold;
 }
 
 .h3-text {
-  @include text(30px, 36px);
+  @include text(var(--h3-text), 36px);
   @extend .bold;
 }
 
 .body-text {
-  @include text(16px, 110%);
+  @include text(var(--body-text), 110%);
   @extend .medium;
 
   &_lg {
@@ -39,7 +39,7 @@
 }
 
 .title-text {
-  @include text(20px, 110%);
+  @include text(var(--title-text), 110%);
   @extend .bold;
 }
 
