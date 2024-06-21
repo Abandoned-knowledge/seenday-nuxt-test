@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   &::before {
     @apply bg-black opacity-50 fixed w-full h-full;
   }
