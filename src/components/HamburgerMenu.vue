@@ -51,7 +51,7 @@ const unlockBody = () => document.body.removeAttribute("class");
 
 <style lang="scss" scoped>
 .popup {
-  @apply py-4 bg-black absolute bottom-0 h-full left-0 w-full sm:w-[80%] -translate-x-full transition-all duration-[400ms] ease-in-out;
+  @apply z-10 py-4 bg-black absolute bottom-0 h-full left-0 w-full sm:w-[80%] -translate-x-full transition-all duration-[400ms] ease-in-out;
 
   &.active {
     @apply translate-x-0;
